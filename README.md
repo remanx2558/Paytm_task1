@@ -3,12 +3,16 @@
 Evaluation :  15th Jan. 11 AM
 
 Evaluation Process : Evaluation would NOT be done on your system. It would be a clean sandbox on a different machine. Code would be checked out from github, built on the command line and executed. With that, your code would be reviewed, graded and feedback provided in one-on-one review sessions.You are given 4 files - 
+
 1) ratings.data -- The full u data set, 100000 ratings by 943 users on 1682 items.
        Each user has rated at least 20 movies. Users and items are
        numbered consecutively from 1. The data is randomly
        ordered. This is a tab separated list of 
 	     user id | item id | rating | timestamp. 
-       The time stamps are unix seconds since 1/1/1970 UTC  2) movies.data Information about movies; this is a tab separated
+       The time stamps are unix seconds since 1/1/1970 UTC
+       
+       
+2) movies.data Information about movies; this is a tab separated
        list of
        movie id | movie title | release date | video release date |
        IMDb URL | unknown | Action | Adventure | Animation |
@@ -18,10 +22,19 @@ Evaluation Process : Evaluation would NOT be done on your system. It would be a 
        The last 19 fields are the genres, a 1 indicates the movie
        is of that genre, a 0 indicates it is not; movies can be in
        several genres at once.
-       The movie ids are the ones used in the ratings.data data set.3) genre.data A list of the movie genres4) user.data Demographic information about the users; this is a tab
+       The movie ids are the ones used in the ratings.data data set.
+       
+       
+ 3) genre.data A list of the movie genres
+        
+        
+4) user.data Demographic information about the users; this is a tab
        separated list of
        user id | age | gender | occupation | zip code
-       The user ids are the ones used in the u.data data set.Warm Up Problems : 
+       
+       
+       
+ The user ids are the ones used in the u.data data set.Warm Up Problems : 
 ============
 == Top Movie By Genre
 == Top Movie By Year
@@ -31,6 +44,8 @@ Evaluation Process : Evaluation would NOT be done on your system. It would be a 
 == Highest rated Genre
 == Most Active UserProblem Statement :
 ============ 
+
+
 Given a user id, recommend 5 movies for that user. You should recommend a movie which the user has the highest probability of liking. You must not recommend a movie the user has already seen. Current data set is for 100K ratings. Final data set would be for 1M ratings. So make sure your solution can scale.
 
 
